@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "en",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Professional geotechnical services in Delta BC, Canada. Soil studies, testing and technical consulting.",
+  "id": "/delta-bc-7746"
 }
