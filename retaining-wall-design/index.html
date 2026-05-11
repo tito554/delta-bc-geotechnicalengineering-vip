@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
@@ -57,7 +62,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
     margin-bottom: 1.25rem; font-size: 1rem;
 }
 footer a { color: rgba(255,255,255,0.85); }
-    main { padding: 1.5rem; }
+    
 .servicio:hover { border-color: var(--primary); }
 .cta .whatsapp-btn:hover { background: #1eb853; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -109,7 +114,7 @@ details[open] summary::before { content: '− '; }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-    .container { padding: 1rem; }
+    
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
 .sidebar .cat .arrow { font-size: .65rem; transition: transform .2s; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
@@ -129,14 +134,16 @@ main section { margin-bottom: 1.5rem; }
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .content-area { flex-direction: column; }
+    
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 summary::-webkit-details-marker { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   .sidebar nav,.sidebar .nav{display:block!important}
   aside{align-self:start!important}
-img{max-width:100%!important;height:auto!important}</style></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Local geotechnical conditions in Delta BC</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The Fraser River delta's high precipitation and seasonal flooding create a constant challenge for retaining wall design in Delta BC. Water pressure buildup behind the wall is the number one cause of failure here. Combined with the low shear strength of the native silt and organic deposits, the risk of rotational or sliding failure increases significantly. We always include a drainage layer and weep holes in the design, and for taller walls we recommend a structural tie-back system. The <a href="../slope-stability-analysis/">slope stability</a> <a href="../foundations-fill/" data-interlink="1">analysis</a> for the retained soil is critical to ensure long-term performance, especially after heavy rain events.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How much does retaining wall design cost in Delta BC?</summary><p>Typical geotechnical design fees for a retaining wall in Delta BC range between CA$1.380 and CA$5.960, depending on wall height, site access, and required testing. This includes site investigation, <a href="../foundations-fill/" data-interlink="1">analysis</a>, and stamped drawings. Volume discounts apply for multiple walls on the same property.</p></details><details><summary>What soil conditions are typical for retaining walls in Delta BC?</summary><p>The dominant soils are Fraser River silt, clayey silt, and occasional peat lenses. The water table sits near the surface, often within 1 m. Standard design parameters include an effective friction angle of 28-30° and undrained shear strength of 30-50 kPa for the silt layers.</p></details><details><summary>Do I need a geotechnical report before building a retaining wall in Delta BC?</summary><p>Yes. The local building authority typically requires a geotechnical report for any wall over 1.2 m in height. The report must include <a href="../soil-classification/" data-interlink="1">soil classification</a>, groundwater conditions, and a design recommendation for the wall's foundation and drainage system.</p></details><details><summary>How does seismic loading affect retaining wall design in Delta BC?</summary><p>Delta BC falls within a moderate seismic zone. NBCC 2020 requires a seismic <a href="../foundations-fill/" data-interlink="1">analysis</a> for walls supporting more than 0.5 m of retained soil. We calculate the pseudo-static seismic coefficient and check for sliding and overturning under the design earthquake. Liquefaction is a concern near the river channels.</p></details>
             </section>
 

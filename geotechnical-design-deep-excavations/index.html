@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
@@ -57,7 +62,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
     margin-bottom: 1.25rem; font-size: 1rem;
 }
 footer a { color: rgba(255,255,255,0.85); }
-    main { padding: 1.5rem; }
+    
 .servicio:hover { border-color: var(--primary); }
 .cta .whatsapp-btn:hover { background: #1eb853; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -109,7 +114,7 @@ details[open] summary::before { content: '− '; }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-    .container { padding: 1rem; }
+    
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
 .sidebar .cat .arrow { font-size: .65rem; transition: transform .2s; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
@@ -129,14 +134,16 @@ main section { margin-bottom: 1.5rem; }
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .content-area { flex-direction: column; }
+    
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 summary::-webkit-details-marker { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   .sidebar nav,.sidebar .nav{display:block!important}
   aside{align-self:start!important}
-img{max-width:100%!important;height:auto!important}</style></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Local geotechnical conditions in Delta BC</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The biggest risk during deep excavations in Delta BC is uncontrolled groundwater inflow. The Fraser River delta has a shallow aquifer under artesian pressure in some zones, especially near the Boundary Bay shoreline. If the excavation bottom is below the piezometric head, a quick condition can develop, leading to piping failure and sudden loss of support. We've seen cases where a 6-meter excavation in silty sand collapsed in minutes because the sheet pile toe did not penetrate the confining layer. That's why every geotechnical design of deep excavations in Delta BC must include a detailed seepage <a href="../foundations-fill/" data-interlink="1">analysis</a> with appropriate factor of safety. Our engineers run transient flow models that account for tidal fluctuations, which can raise the hydraulic gradient by 20% during high tide.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the typical cost range for geotechnical design of deep excavations in Delta BC?</summary><p>For a standard deep excavation project in Delta BC, the design and <a href="../foundations-fill/" data-interlink="1">analysis</a> phase typically costs between CA$2.670 and CA$11.490, depending on the depth, soil complexity, and monitoring requirements. This includes field investigation, lab testing, numerical modelling, and a detailed design report.</p></details><details><summary>Why is the Fraser River delta soil so challenging for deep excavations?</summary><p>The deltaic soils are soft, highly compressible, and often interbedded with sand lenses. The high water table and seasonal tidal fluctuations create variable pore pressures. These conditions increase the risk of basal heave, wall deflection, and piping if the design does not properly account for effective stress changes during excavation.</p></details><details><summary>What factor of safety does the NBCC require for basal heave in deep excavations?</summary><p>The NBCC 2020 does not prescribe a single factor for basal heave, but the industry standard in Delta BC is a minimum of 1.5 against heave, and 1.3 against piping. Our designs typically target 1.6 to account for the uncertainty in the layered deltaic profile.</p></details><details><summary>Do I need a hydrogeological study for a deep excavation in Delta BC?</summary><p>Yes, almost always. The Fraser River delta has a complex aquifer system with confined and unconfined zones. A hydrogeological study is essential to determine the design groundwater level, estimate inflow rates, and plan dewatering or cut-off measures. Without it, the risk of a water-related failure is high.</p></details>
             </section>
 

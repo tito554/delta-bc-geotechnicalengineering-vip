@@ -26,6 +26,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 .sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
@@ -57,7 +62,7 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
     margin-bottom: 1.25rem; font-size: 1rem;
 }
 footer a { color: rgba(255,255,255,0.85); }
-    main { padding: 1.5rem; }
+    
 .servicio:hover { border-color: var(--primary); }
 .cta .whatsapp-btn:hover { background: #1eb853; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -109,7 +114,7 @@ details[open] summary::before { content: '− '; }
 .cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
 
 details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-    .container { padding: 1rem; }
+    
 .cat-toggle:hover{background:rgba(255,255,255,.1)}
 .sidebar .cat .arrow { font-size: .65rem; transition: transform .2s; }
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
@@ -129,14 +134,16 @@ main section { margin-bottom: 1.5rem; }
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
 .cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-    .content-area { flex-direction: column; }
+    
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
 summary::-webkit-details-marker { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-.header-contact a:hover { color: white; }</style>
+.header-contact a:hover { color: white; }
+
+</style>
 <style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
@@ -148,7 +155,9 @@ header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
   .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   .sidebar nav,.sidebar .nav{display:block!important}
   aside{align-self:start!important}
-img{max-width:100%!important;height:auto!important}</style></head>
+img{max-width:100%!important;height:auto!important}
+}
+</style></head>
 <body>
 
 <header>
@@ -192,6 +201,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>Local geotechnical conditions in Delta BC</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Delta BC sits on the Fraser River delta, a region that has experienced several M5+ crustal earthquakes since 1900, most recently the 2022 M5.2 event near Victoria felt across the Lower Mainland. If you build on soft deltaic soils without a proper MASW / VS30 assessment, the structure may be assigned the wrong NBCC site class — often a Category D when it should be E. That mismatch can underestimate spectral accelerations by up to 40%, leading to brittle failure in the lateral system during a design-level event. The 2020 NBCC update tightened the Vs30 thresholds for Class E (under 180 m/s), so even a small error in velocity profiling shifts the design spectrum significantly. Since the delta deposits are stratified with interbedded peat and sand lenses, the 30-meter average can hide a weak layer near the base; we always check the full 1D profile, not just the Vs30 number.</p>
             </section>
 
@@ -216,6 +227,8 @@ img{max-width:100%!important;height:auto!important}</style></head>
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How does MASW / Vs30 differ from a standard SPT boring for seismic design in Delta BC?</summary><p>SPT borings give point measurements of blow counts at discrete depths, but they don't directly measure shear wave velocity. MASW / Vs30 measures the actual propagation velocity of shear waves through the soil column continuously to 30 m. In Delta BC's layered deltaic soils, the Vs30 value from MASW often classifies the site one class lower (softer) than a simplified SPT correlation would predict, because the correlation formulas are calibrated on stiffer soils elsewhere.</p></details><details><summary>What is the typical cost range for a MASW / Vs30 survey in Delta BC?</summary><p>For a standard single-line survey with full interpretation and reporting, the cost typically falls between CA$2,110 and CA$3,770, depending on site access, array length, and whether passive recording is included. Multi-line surveys or hybrid active-passive setups may fall at the upper end or slightly beyond that range. Contact us for a site-specific quote.</p></details><details><summary>Can MASW be used on paved or developed sites in Delta BC?</summary><p>Yes, MASW works well on asphalt, concrete, and compacted gravel surfaces because the geophones couple directly to the ground via base plates or spike mounts. We have surveyed several school yards and parking lots in North Delta and Tsawwassen without any pavement damage. The non-invasive nature makes it ideal for existing infrastructure where drilling is restricted.</p></details><details><summary>How deep does the MASW survey reach in the Fraser River delta soils?</summary><p>With a standard 46 m array and sledgehammer source, we typically achieve a depth of investigation of 30 to 45 m in the soft deltaic clays and silts. If deeper profiling is needed — for example, to reach the glacial till beneath the delta sequence — we add a passive microtremor array that can extend the depth range to 60-80 m. The trade-off is that deeper profiles have lower vertical resolution in the top 10 m.</p></details><details><summary>What NBCC site classes are most common in Delta BC based on MASW data?</summary><p>Based on our surveys across Delta BC, about 60% of sites fall into Class D (stiff soil, Vs30 180-360 m/s), 30% into Class E (soft soil, Vs30 <180 m/s) especially near Burns Bog and the Fraser River foreshore, and 10% into Class C (very dense soil/soft rock, Vs30 360-760 m/s) on the higher ground around Boundary Bay. We strongly recommend a site-specific survey rather than relying on the BC Building Code default Class D for the municipality.</p></details>
             </section>
 
